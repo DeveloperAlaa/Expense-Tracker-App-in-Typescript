@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Expense Tracker</title>
+    <script src="./dist/app.js" defer></script>
+  </head>
+  <body>
+    <header class="app__header">
+      <h1 class="header__logo">Track<span>It</span></h1>
+    </header>
+    <main class="app__main">
+      <h2 class="current-money" id="current-money">00.00</h2>
+      <form class="form" id="form">
+        <select name="expenseType" required id="expense-type">
+          <option value="" disabled selected hidden>Select Type</option>
+          <option value="credit">Credit</option>
+          <option value="debit">Debit</option>
+        </select>
+        <input type="text" name="description" id="description" required placeholder="Enter a description" />
+        <input type="number" name="amount" id="amount" step="any" required placeholder="Enter an amount" />
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="cards">
+        <div class="cards__debit">    
+        </div>
+        <div class="cards__credit">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
