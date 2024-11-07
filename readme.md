@@ -1,4 +1,4 @@
-# This is an expense tracker built with html , css and typescript and the localStorage API
+# This is an expense tracker built with html, css, typescript and the localStorage API
 
 ### **Note:-** Make sure you have typescript installed locally on your machine when cloning the project
 
